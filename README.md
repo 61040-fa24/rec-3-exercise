@@ -1,4 +1,4 @@
-# 6.1040 Node and Express recitation prep
+# 6.1040 Node and Express recitation exercise
 
 ## Overview
 

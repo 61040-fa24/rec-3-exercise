@@ -1,6 +1,6 @@
 import { Router, getExpressRouter } from "./framework/router";
 
-import { Sessioning } from "./app";
+import { Authing, Sessioning } from "./app";
 import { SessionDoc } from "./concepts/sessioning";
 
 /**
@@ -20,6 +20,12 @@ class Routes {
   async logOut(session: SessionDoc) {
     Sessioning.end(session);
     return { msg: "Logged out!" };
+  }
+
+  @Router.post("/register")
+  async register(username: string) {
+    Authing.register(username);
+    return { msg: "Username registered!", user: username };
   }
 
   // ... and when we have more concepts, we will add more routes!

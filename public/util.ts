@@ -26,6 +26,12 @@ const operations: Operation[] = [
     method: "POST",
     fields: {},
   },
+  {
+    name: "Register",
+    endpoint: "/api/register",
+    method: "POST",
+    fields: { username: "input" },
+  },
   //
   // ...
   //

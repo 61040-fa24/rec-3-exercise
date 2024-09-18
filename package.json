@@ -1,5 +1,5 @@
 {
-  "name": "rec-3-prep",
+  "name": "rec-3-exercise",
   "version": "0.0.1",
   "scripts": {
     "build": "tsc -p server/tsconfig.json && copyfiles public/*.html public/*.css public/favicon.ico dist-server/",
